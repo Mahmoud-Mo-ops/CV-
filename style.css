@@ -49,6 +49,7 @@
   }
   html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   .container{
     padding-left:15px;
@@ -381,7 +382,7 @@ nav .contents.open{
 }
 @media (max-width:400px) {
   .portofilio .container .projects {
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
 }
 .portofilio .container .projects .project{
@@ -498,3 +499,22 @@ input[type=submit]:hover {
   color:goldenrod;
 }
 
+.up{
+  position: fixed;
+  z-index: 5;
+  bottom: 20px;
+  right: 20px;
+  background-color:rgb(29, 15, 68);
+  color:#fff;
+  width: 35px;
+  aspect-ratio: 1/1;
+  display: block;
+  cursor: pointer;
+}
+.up i{
+  width: 100%;
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,7 +1,6 @@
 const selector=(ele)=>document.querySelector(ele);
 const selectorAll=(all)=>document.querySelectorAll(all);
 
-console.log(selector('nav .links .icon span:nth-child(2)'))
 selector('.links').addEventListener('click',(e)=>{
     selector('nav .links .icon span:nth-child(2)').classList.toggle('full')
     selector('nav .contents').classList.toggle('open');
@@ -40,13 +39,17 @@ bulltesSkills.forEach((bullet)=>{
 
  }
 
-
  window.addEventListener('scroll',porto)
  function porto(){
-    console.log(selector('.portofilio .container .projects'))
      if(window.scrollY >= selector('.portofilio .container .projects ').offsetTop - 480){
          selector('.portofilio .container .projects ').style.opacity="1"
  }
 }
 
-
+let jump=document.querySelector('.up');
+    jump.addEventListener(('click'),()=>{
+        window.scrollTo({
+            top:0,
+            left:0,
+        })
+    })
