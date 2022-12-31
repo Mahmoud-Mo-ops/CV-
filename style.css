@@ -285,11 +285,13 @@ nav .contents.open{
   .container .about{
      flex-direction: column;
   }
-  
   .container .about .image-about{
-    width:250px;
+    width:80%;
     margin-right: 0;
     margin-bottom: 20px;
+  }
+  .container .about .infos{
+    width: 80%;
   }
 }
 /*start skills*/
@@ -380,7 +382,7 @@ nav .contents.open{
  opacity: 0;
   transition: ease-in-out .4s;
 }
-@media (max-width:400px) {
+@media (max-width:480px) {
   .portofilio .container .projects {
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
