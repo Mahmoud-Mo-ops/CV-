@@ -223,10 +223,10 @@ nav .links .icon span:last-child{
 nav .contents .content{
   position: relative;
   z-index: 1;
-  margin-right: 65px;
 }
 nav .contents.open{
-  top:6.5vh;
+  top:7.5vh;
+  width: 100vw;
   z-index: 1;
 }
 .landing{
@@ -378,6 +378,11 @@ nav .contents.open{
  gap: 30px;
  opacity: 0;
   transition: ease-in-out .4s;
+}
+@media (max-width:400px) {
+  .portofilio .container .projects {
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
 }
 .portofilio .container .projects .project{
   position: relative;
